@@ -1,2 +1,2 @@
 # PruebaVsCode
-Repo de prueba para VsCode de Mario Ramos Esquinas
+Repo de prueba para VsCode de Mario Ramos Esquinas.

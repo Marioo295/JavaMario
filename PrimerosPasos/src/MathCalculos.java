@@ -1,4 +1,4 @@
-public class CalculosConMath {
+public class MathCalculos {
     public static void main(String[] args){
         //double raiz=Math.sqrt(9);
         //double num1=5.85;

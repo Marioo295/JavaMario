@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AdivinaNumeroDoWhile {
+public class DoWhileAdivinaNumero {
     public static void main(String[] args) {
         int aleatorio = (int)(Math.random()*100);
         try (Scanner entrada = new Scanner(System.in)) {

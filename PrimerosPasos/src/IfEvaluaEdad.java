@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class EvaluaEdad {
+public class IfEvaluaEdad {
     public static void main(String[]args) {
         try (Scanner entrada = new Scanner(System.in)) {
             System.out.println("Introduce tu edad");

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class EvaluaAreas {
+public class SwitchEvaluaAreas {
     public static void main(String[] args) {
         try (Scanner entrada = new Scanner(System.in)) {
             System.out.println("Elige una opción: \n1: Cuadrado \n2: Rectángulo \n3: Triángulo \n4: Círculo");

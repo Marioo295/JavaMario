@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class AccesoAppWhile {
+public class WhileAccesoApp {
     public static void main(String[] args) {
         String clave = "mario";
         String pass = "";

@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class PesoIdealDoWhile {
+public class DoWhilePesoIdeal {
     public static void main(String[] args) {
         String genero = "";
         do{

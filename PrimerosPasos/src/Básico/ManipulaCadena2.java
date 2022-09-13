@@ -1,3 +1,4 @@
+package Básico;
 public class ManipulaCadena2 {
     public static void main(String[]args) {
         String frase = "Hoy es un dia estupendo para aprender Java";

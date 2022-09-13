@@ -1,3 +1,4 @@
+package Básico;
 import javax.swing.JOptionPane;
 
 public class EntradaNumeros {

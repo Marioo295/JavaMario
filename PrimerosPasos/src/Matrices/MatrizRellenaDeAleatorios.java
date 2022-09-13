@@ -1,3 +1,4 @@
+package Matrices;
 public class MatrizRellenaDeAleatorios {
     public static void main(String[] args) {
         int [] aleatorios = new int[100];

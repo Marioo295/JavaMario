@@ -1,3 +1,4 @@
+package Básico;
 public class MathCalculos {
     public static void main(String[] args){
         //double raiz=Math.sqrt(9);

@@ -1,3 +1,4 @@
+package Básico;
 public class ManipulaCadena {
     public static void main(String[]args) {
         String nombre="Mario Ramos Esquinas";

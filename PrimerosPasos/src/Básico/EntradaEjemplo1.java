@@ -1,3 +1,4 @@
+package Básico;
 import java.util.Scanner;
 
 public class EntradaEjemplo1 {

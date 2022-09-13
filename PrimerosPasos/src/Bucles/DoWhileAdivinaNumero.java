@@ -1,3 +1,4 @@
+package Bucles;
 import java.util.Scanner;
 
 public class DoWhileAdivinaNumero {

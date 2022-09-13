@@ -72,4 +72,12 @@ public class Coche {
     public void setAsientosCuero(boolean asientosCuero) {
         this.asientosCuero = asientosCuero;
     }
+
+    @Override
+    public String toString() {
+        return "Coche [El largo del coche es=" + largo + ", el ancho del coche es=" + ancho + 
+        ", asientosCuero=" + asientosCuero + ", el color del coche es=" + color + ", motor=" + motor + 
+        ", el peso de la plataforma es=" + pesoPlataforma + ", el peso total es=" + pesoTotal + 
+        " y tiene " + ruedas+ " ruedas.]";
+    }
 }

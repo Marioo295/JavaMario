@@ -2,7 +2,10 @@ package POO;
 
 public class UsoCoche {
     public static void main(String[] args) {
-        Coche Renault = new Coche(4, 2000, 300, 1600, 500);
-        System.out.println("Este coche tiene " +Renault.ruedas+ " ruedas. Mide " +Renault.largo+ " de largo y " +Renault.ancho+ " de ancho. Tiene un motor " +Renault.motor+ " con un peso de " +Renault.peso+ " kilos.");
+        Coche Renault = new Coche(4, 2000, 1000, 1600, 500); //Instanciar una clase
+        Renault.setColor("azul");
+        Renault.setAsientosCuero(true);
+        System.out.println("Este coche tiene " + Renault.getRuedas() + " ruedas. Mide " + Renault.getLargo()/1000 + " metros de largo y " + Renault.getAncho()/1000 + " metros de ancho. Tiene un motor " + Renault.getMotor() + " con un peso de " + Renault.getPesoPlataforma() + 
+        " kilos. El color del coche es " + Renault.getColor() + " y tiene asientos de cuero " + Renault.getAsientosCuero());
     }
 }

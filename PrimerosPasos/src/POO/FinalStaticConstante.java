@@ -7,10 +7,9 @@ public class FinalStaticConstante {
         Empleados trabajador3 = new Empleados("Antonio");
         Empleados trabajador4 = new Empleados("Fernando");
         trabajador1.setSeccion("RRHH");
-        System.out.println(trabajador1.getDatos());
-        System.out.println(trabajador2.getDatos());
-        System.out.println(trabajador3.getDatos());
-        System.out.println(trabajador4.getDatos());
+        System.out.println(trabajador1.getDatos() + "\n" + trabajador2.getDatos() + 
+        "\n" + trabajador3.getDatos() + "\n" + trabajador4.getDatos());
+        System.out.println(Empleados.dameIdSiguiente());
     }
 }
 
@@ -33,5 +32,14 @@ class Empleados {
 
     public void setSeccion(String seccion) {
         this.seccion = seccion;
+    }
+
+    /*
+     * Los métodos static no actúan sobre objetos.
+     * No acceden a campos de ejemplar(variables/constantes), a menos que sean también static
+     * Para llamarlos se utiliza el nombreClase.nombreMetodo
+     */
+    public static String dameIdSiguiente() {
+        return "El IdSiguiente es: " +idSiguiente;
     }
 }

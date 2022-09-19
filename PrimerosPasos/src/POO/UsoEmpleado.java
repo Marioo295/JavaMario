@@ -23,6 +23,8 @@ public class UsoEmpleado {
         misEmpleados[2] = new Empleado("Pepe Otero", 50000, 1995, 3, 16);
         misEmpleados[3] = jefeRRHH; //POLIMORFISMO EN ACCIÓN. PRINCIPIO DE SUSTITUCIÓN
         misEmpleados[4] = new Jefatura("Juana de Arco", 95000, 1999, 5, 26);
+        Jefatura jefaFinanzas = (Jefatura) misEmpleados[4]; //Casting de objetos para poder utilizar métodos de otras clases
+        jefaFinanzas.setIncentivo(55000);
 
         /*for (int i = 0; i < misEmpleados.length; i++) {
             misEmpleados[i].setSueldo(5);
@@ -41,7 +43,7 @@ public class UsoEmpleado {
     }
 }
 
-class Empleado {
+/*final*/ class Empleado {
 
     private String nombre;
     private double sueldo;
@@ -57,7 +59,7 @@ class Empleado {
         return nombre;
     }
 
-    public double getSueldo() {
+    public /*final*/ double getSueldo() {
         return sueldo;
     }
 

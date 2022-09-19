@@ -1,0 +1,7 @@
+MODIFICADORES DE ACCESO
+
+            1. Public - clase SI, paquete SI, subclase SI, todos SI.
+            2. Protected - clase SI, paquete SI, subclase SI, todos NO.
+            3. Private - clase SI, paquete NO, subclase NO, todos NO.
+            4. Por defecto - clase SI, paquete SI, subclase NO, todos NO.
+        

@@ -1,5 +1,6 @@
 package POO;
 
+import java.util.Arrays;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -33,9 +34,13 @@ public class UsoEmpleado {
             System.out.println("Nombre: " +misEmpleados[i].getNombre()+ ", Sueldo: " +misEmpleados[i].getSueldo()+
             ", Fecha de alta: " +misEmpleados[i].getAltaContrato());
         }*/
+
+        Arrays.sort(misEmpleados);
+
         for (Empleado e : misEmpleados) {
             e.setSueldo(5);
         }
+
         for (Empleado e : misEmpleados) {
             System.out.println("Nombre: " +e.getNombre()+ ", Sueldo: " +e.getSueldo()+
             ", Fecha de alta: " +e.getAltaContrato());
@@ -43,7 +48,7 @@ public class UsoEmpleado {
     }
 }
 
-/*final*/ class Empleado {
+/*final*/ class Empleado implements Comparable {
 
     private String nombre;
     private double sueldo;
@@ -70,6 +75,18 @@ public class UsoEmpleado {
 
     public Date getAltaContrato() {
         return altaContrato;
+    }
+
+    @Override
+    public int compareTo(Object miObjeto) {
+        Empleado otroEmpleado = (Empleado) miObjeto;
+        if (this.sueldo<otroEmpleado.sueldo) {
+            return -1;
+        }
+        if (this.sueldo>otroEmpleado.sueldo) {
+            return 1;
+        }
+        return 0;
     }
 }
 

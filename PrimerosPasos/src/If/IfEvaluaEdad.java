@@ -1,3 +1,5 @@
+package If;
+
 import java.util.Scanner;
 
 public class IfEvaluaEdad {

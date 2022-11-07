@@ -27,6 +27,8 @@ public class UsoEmpleado {
         Jefatura jefaFinanzas = (Jefatura) misEmpleados[4]; //Casting de objetos para poder utilizar métodos de otras clases
         jefaFinanzas.setIncentivo(55000);
 
+        System.out.println(jefaFinanzas.tomarDecisiones("Dar más días de vacaciones a los empleados"));
+
         /*for (int i = 0; i < misEmpleados.length; i++) {
             misEmpleados[i].setSueldo(5);
         }
@@ -90,11 +92,15 @@ public class UsoEmpleado {
     }
 }
 
-class Jefatura extends Empleado {
+class Jefatura extends Empleado implements Jefes {
     private double incentivo;
 
     public Jefatura(String nom, double sue, int anio, int mes, int dia) {
         super(nom, sue, anio, mes, dia);
+    }
+
+    public String tomarDecisiones(String decision){
+        return "Un miembro de la dirección ha tomado la decisión de " + decision;
     }
 
     public double getSueldo() {

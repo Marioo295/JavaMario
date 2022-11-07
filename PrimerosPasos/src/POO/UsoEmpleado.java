@@ -29,6 +29,10 @@ public class UsoEmpleado {
 
         System.out.println(jefaFinanzas.tomarDecisiones("Dar más días de vacaciones a los empleados"));
 
+        System.out.println("El jefe " + jefaFinanzas.getNombre() + " tiene un bonus de " + jefaFinanzas.estableceBonus(500));
+
+        System.out.println(misEmpleados[3].getNombre() + " tiene un bonus de: " + misEmpleados[3].estableceBonus(200));
+
         /*for (int i = 0; i < misEmpleados.length; i++) {
             misEmpleados[i].setSueldo(5);
         }
@@ -50,7 +54,7 @@ public class UsoEmpleado {
     }
 }
 
-/*final*/ class Empleado implements Comparable {
+/*final*/ class Empleado implements Comparable, Trabajadores {
 
     private String nombre;
     private double sueldo;
@@ -60,6 +64,10 @@ public class UsoEmpleado {
         sueldo = sue;
         GregorianCalendar calendario = new GregorianCalendar(anio, mes-1, dia);
         altaContrato = calendario.getTime();
+    }
+
+    public double estableceBonus(double gratificacion){
+        return Trabajadores.bonusBase+gratificacion;
     }
 
     public String getNombre() {
@@ -101,6 +109,11 @@ class Jefatura extends Empleado implements Jefes {
 
     public String tomarDecisiones(String decision){
         return "Un miembro de la dirección ha tomado la decisión de " + decision;
+    }
+
+    public double estableceBonus(double gratificacion){
+        double prima=2000;
+        return Trabajadores.bonusBase+gratificacion+prima;
     }
 
     public double getSueldo() {

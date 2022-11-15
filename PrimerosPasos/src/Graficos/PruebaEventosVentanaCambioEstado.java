@@ -6,7 +6,7 @@ import javax.swing.*;
 
 import java.awt.event.*;
 
-public class PruebaEventosCambioEstado {
+public class PruebaEventosVentanaCambioEstado {
     public static void main(String[] args) {
         MarcoEstado miMarco=new MarcoEstado();
         miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   

@@ -30,9 +30,9 @@ class LaminaMenu extends JPanel {
         JMenu opciones=new JMenu("Opciones");
         JMenuItem guardar=new JMenuItem("Guardar");
         JMenuItem guardarcomo=new JMenuItem("Guardar como");
-        JMenuItem cortar=new JMenuItem("Cortar");
-        JMenuItem copiar=new JMenuItem("Copiar");
-        JMenuItem pegar=new JMenuItem("Pegar");
+        JMenuItem cortar=new JMenuItem("Cortar", new ImageIcon("C:/Users/Usuario/Desktop/JavaMario/JavaMario/PrimerosPasos/src/Graficos/Cortar.png"));
+        JMenuItem copiar=new JMenuItem("Copiar", new ImageIcon("C:/Users/Usuario/Desktop/JavaMario/JavaMario/PrimerosPasos/src/Graficos/Copiar.png"));
+        JMenuItem pegar=new JMenuItem("Pegar", new ImageIcon("C:/Users/Usuario/Desktop/JavaMario/JavaMario/PrimerosPasos/src/Graficos/Pegar.png"));
         JMenuItem generales=new JMenuItem("Generales");
         JMenuItem op1=new JMenuItem("Opción 1");
         JMenuItem op2=new JMenuItem("Opción 2");
